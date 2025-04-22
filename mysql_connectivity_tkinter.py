@@ -3,13 +3,6 @@ from tkinter import *
 from tkinter import messagebox
 from mysql import connector
 
-''' Connecting to my sql database '''
-mydb = connector.connect(
-    host='localhost',
-    user='root',
-    password='',
-    database='kc_db'
-)
 
 ''' Functions '''
 
@@ -638,7 +631,20 @@ def home():
 window = Tk()
 window.title("Database Connectivity")
 
-home()
+''' Connecting to my sql database '''
+try:
+    mydb = connector.connect(
+        host='localhost',
+        user='root',
+        password='',
+        database='kc_db'
+    )
+    home()
+
+except:
+    print('server down')
+    window.destroy()
+
 
 window.mainloop()
 
