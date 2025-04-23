@@ -14,3 +14,6 @@ Funtions:
     3.Add rows into table
     4.Update the table
     5.Deletion of rows
+
+link for this project file:
+https://github.com/KC-004/Mysql-and-tkinter-Database-Management
