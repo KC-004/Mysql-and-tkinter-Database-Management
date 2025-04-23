@@ -645,7 +645,6 @@ except:
     print('server down')
     window.destroy()
 
-
 window.mainloop()
 
 
