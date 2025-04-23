@@ -24,7 +24,7 @@ def display_data():
         storage.append(items)
     print(storage)
     n = len(storage)
-
+    i = 0
     for i in range(n):                    #Creating table
         for j in range(len(storage[i])):
             entry = Entry(window,
